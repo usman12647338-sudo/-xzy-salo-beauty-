@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-nordic-cream text-nordic-charcoal font-sans antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-8 py-3 bg-nordic-gold text-white font-medium 
+           transition-all duration-300 hover:bg-nordic-charcoal 
+           hover:scale-105 active:scale-95 shadow-lg;
+  }
+}
